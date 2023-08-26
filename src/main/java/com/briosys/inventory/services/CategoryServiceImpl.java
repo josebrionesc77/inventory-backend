@@ -155,7 +155,6 @@ public class CategoryServiceImpl implements ICategoryService {
 	@Transactional
 	public ResponseEntity<CategoryResponseRest> deleteById(Long id) {
 		CategoryResponseRest response = new CategoryResponseRest();
-		List<Category> list = new ArrayList<>();
 		try {
 			
 			categoryDao.deleteById(id);
